@@ -6,6 +6,9 @@ TagManager:
   tags:
   - car
   - steer
+  - Red
+  - Green
+  - Blue
   layers:
   - Default
   - TransparentFX
@@ -42,4 +45,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 1421119227
+    locked: 0
+  - name: 2
+    uniqueID: 3847832129
+    locked: 0
+  - name: 3
+    uniqueID: 882167175
+    locked: 0
+  - name: 4
+    uniqueID: 2612210899
+    locked: 0
+  - name: 5
+    uniqueID: 1247883339
+    locked: 0
+  - name: 6
+    uniqueID: 1485053413
+    locked: 0
+  - name: 7
+    uniqueID: 530842741
     locked: 0
