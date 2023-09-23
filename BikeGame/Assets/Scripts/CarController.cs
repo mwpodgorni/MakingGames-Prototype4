@@ -18,6 +18,7 @@ public class CarController : MonoBehaviour
     public float speed = 12.0f;
      public float rotationSpeed = 5.0f;
     public GameObject carObject;
+
     public List<string> checkpoints = new List<string>();
     private int currentCheckpointIndex = 0;
     void FixedUpdate()
@@ -57,6 +58,10 @@ public class CarController : MonoBehaviour
                 // Move to the next checkpoint or loop back to the first if it's the last one
                 currentCheckpointIndex = (currentCheckpointIndex + 1) % checkpoints.Count;
             }
+            carObject.transform.position = new Vector3(carObject.transform.position.x, 0.94f, carObject.transform.position.z);
+                Quaternion newRotation = Quaternion.Euler(0f, carObject.transform.rotation.eulerAngles.y, 0f);
+            carObject.transform.rotation = newRotation;
+            
         }
         else
         {
