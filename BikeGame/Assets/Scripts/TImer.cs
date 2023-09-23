@@ -39,5 +39,7 @@ public class Timer : MonoBehaviour
             string timeString = string.Format("{0:00}:{1:00}", minutes, seconds);
             timerText.text = timeString;
         }
+
+        
     }
 }
