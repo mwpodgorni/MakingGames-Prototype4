@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
 {
     public float speed = 10.0f;   // Forward speed of the bike
     public float brakePower = 5.0f;  // Deceleration when braking
+    public float maxSpeed = 20.0f;  // Maximum speed of the bike
     public float turnSpeed = 3.0f;  // Turning speed
     public float rotationAngle = 30.0f;  // Rotation angle when turning
 
@@ -38,7 +39,8 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             // Accelerate
-            currentSpeed = speed;
+            currentSpeed = Mathf.Min(currentSpeed + speed * Time.deltaTime, maxSpeed);
+
         }
         else
         {
