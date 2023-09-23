@@ -15,24 +15,13 @@ public class CarCheckpoint
 
 public class CarController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 12.0f;
      public float rotationSpeed = 5.0f;
     public GameObject carObject;
-    // public List<CarCheckpoint> checkpointsz = new List<CarCheckpoint>();
-    // public Vector3 test = new Vector3(-92f, 3.4f, 0f);
-
     public List<string> checkpoints = new List<string>();
     private int currentCheckpointIndex = 0;
     void FixedUpdate()
     {
-        // var step = speed * Time.deltaTime; // calculate distance to move
-        // carObject.transform.position = Vector3.MoveTowards(transform.position, test, step);
-        // if (Vector3.Distance(transform.position, test) < 0.001f) ;
-        // {
-        //     // Swap the position of the cylinder.
-        //     // carObject.target.position *= -1.0f;
-        // }
-
         if (checkpoints.Count == 0)
         {
             // No checkpoints to follow
