@@ -83,12 +83,13 @@ public class VerticalAxisBikerMovement : MonoBehaviour
             Debug.Log("Collision with a car!");
             hitCar = true;
             StartCoroutine(LoadSceneAfterDelay(3f));
+
         }
     }
     private IEnumerator LoadSceneAfterDelay(float delayInSeconds)
     {
         yield return new WaitForSeconds(delayInSeconds);
-        //game over
+        PlayerPrefs.SetString("endText", "Game Over");
         SceneManager.LoadScene(2);
     }
 }
