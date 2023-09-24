@@ -30,6 +30,7 @@ public class HitCheckpoint : MonoBehaviour
 
         if (Checkpoints == 5)
         {
+            PlayerPrefs.SetString("endText", "You win!");
             SceneManager.LoadScene("GameOverScreen");
         }
     }
