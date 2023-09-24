@@ -10,7 +10,7 @@ public class HitCheckpoint : MonoBehaviour
     private int Checkpoints = 0;
     private bool GamePassed = false;
 
-    public TextMeshProUGUI counter;
+    private TextMeshProUGUI counter;
 
     private void Start()
     {
